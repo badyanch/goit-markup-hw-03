@@ -18,6 +18,7 @@ body {
 
 ul {
   list-style-type: none;
+  padding-left: 0;
 }
 
 a {
@@ -25,7 +26,19 @@ a {
   text-decoration: none;
 }
 
+h1,
+h2,
+h3,
+ul,
+p {
+  margin: 0 0;
+}
+
 /* Logo */
+.header {
+  border-bottom: 1px solid #ECECEC ;
+}
+
 .logo {
   font-family: Raleway, sans-serif;
 
@@ -40,6 +53,14 @@ a {
 
 .logo > span {
   color: var(--accent-color);
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+
+  outline: auto;
 }
 
 /* Навігація */
@@ -78,18 +99,23 @@ a {
 
 /* Герой */
 .hero {
+  padding: 200px 0;
+
   background-color: var(--primary-bgb-color);
+  text-align: center;
 }
 
 .hero-title {
   font-weight: 900;
   font-size: 44px;
+  max-width: 696px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
+  color: #ffffff;
   text-transform: uppercase;
 
-  color: var(--bgb-color);
+  margin: 0 auto;
+  margin-bottom: 30px;
 }
 
 .hero-button {
@@ -97,8 +123,6 @@ a {
   font-size: 16px;
   line-height: 1.8;
 
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
   background-color: var(--accent-color);
   color: var(--bgb-color);
@@ -111,7 +135,19 @@ a {
   background-color: var(--accent-hero-button-color);
 }
 
+.section {
+  padding-top: 95px;
+  padding-bottom: 95px;
+}
+
+.section.no-padding {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
 .section-title {
+  margin-bottom: 50px;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -124,6 +160,9 @@ a {
 }
 
 .title {
+  margin-top: 0;
+  margin-bottom: 10px;
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -132,6 +171,8 @@ a {
 }
 
 .text {
+  width: 270px;
+
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
@@ -140,10 +181,15 @@ a {
 }
 
 .worker-name {
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
+}
+
+.worker-list img {
+  margin-bottom: 30px;
 }
 
 .profession {
@@ -157,14 +203,29 @@ a {
 /* Футер */
 .footer {
   background-color: var(--primary-bgb-color);
+  padding: 60px 0;
 }
 
 .logo.logo-footer {
-  color: var(--bgb-color);
+  display: inline-block;
 
+  color: var(--bgb-color);
+  margin-bottom: 20px;
 }
 
-.contact-footer  .link-contact {
+.street {
+  margin-bottom: 10px;
+
+  font-size: 14px;
+  line-height: 1.7;
+  font-style: normal;
+
+  color: var(--bgb-color);
+}
+
+.contact-footer .link-contact {
+  margin-bottom: 10px;
+
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
@@ -177,14 +238,6 @@ a {
 .contact-footer .link-contact:hover,
 .contact-footer .link-contact:active {
   color: var(--accent-color);
-}
-
-.street {
-  font-size: 14px;
-  line-height: 1.7;
-  font-style: normal;
-
-  color: var(--bgb-color);
 }
 
 /* Портфоліо */
