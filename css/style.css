@@ -2,6 +2,7 @@
   --primary-text-color: #757575;
   --title-text-color: #212121;
   --accent-color: #2196f3;
+  --primary-btn-color: #f5f4fa;
   --bgb-color: #ffffff;
   --primary-bgb-color: #2f303a;
   --accent-hero-button-color: #188ce8;
@@ -36,7 +37,7 @@ p {
 
 /* Logo */
 .header {
-  border-bottom: 1px solid #ECECEC ;
+  border-bottom: 1px solid #ececec;
 }
 
 .logo {
@@ -241,18 +242,41 @@ p {
 }
 
 /* Портфоліо */
+.button-list {
+  margin-bottom: 34px;
+}
+
 .button-list .button {
-  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.6;
-
-  text-align: center;
+  line-height: 1.63;
+  color: var(--title-text-color);
   cursor: pointer;
+  border: none;
+  background-color: var(--primary-btn-color);
+  border-radius: 4px;
+
+  padding: 6px 22px;
 }
 
 .button-list .button:hover,
 .button-list .button:focus {
   background-color: var(--accent-color);
   color: var(--bgb-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.type {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+
+  color: var(--primary-text-color);
+
+  letter-spacing: 0.03em;
+}
+
+.project-list img {
+  margin-bottom: 20px;
 }
