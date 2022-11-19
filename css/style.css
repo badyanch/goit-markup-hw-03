@@ -61,11 +61,36 @@ p {
   margin: 0 auto;
   padding: 0 15px;
 
-  outline: auto;
 }
 
 /* Навігація */
+.site-nav {
+  margin-left: 93px;
+
+  display: flex;
+  gap: 50px;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  height: 80px;
+}
+
+.contact-nav {
+  display: flex;
+  gap: 50px;
+  margin-left: auto;
+}
+
 .site-nav .link {
+  padding: 32px 0;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.15;
@@ -85,6 +110,8 @@ p {
 }
 
 .contact-nav .link-contact {
+  padding: 32px 0;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.15;
@@ -120,6 +147,8 @@ p {
 }
 
 .hero-button {
+  padding: 10px 32px;
+
   font-weight: 700;
   font-size: 16px;
   line-height: 1.8;
@@ -129,11 +158,20 @@ p {
   color: var(--bgb-color);
 
   cursor: pointer;
+
+  border-radius: 4px;
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .hero-button:hover,
 .hero-button:focus {
   background-color: var(--accent-hero-button-color);
+}
+
+.benefits {
+  display: flex;
+  gap: 30px;
 }
 
 .section {
@@ -181,6 +219,12 @@ p {
   color: var(--primary-text-color);
 }
 
+.work {
+  display: flex;
+  gap: 30px;
+  padding-bottom: 94px;
+}
+
 .worker-name {
   margin-bottom: 10px;
   font-weight: 500;
@@ -189,8 +233,22 @@ p {
   letter-spacing: 0.03em;
 }
 
+.worker-list {
+  display: flex;
+  justify-content: space-between;
+}
+
 .worker-list img {
   margin-bottom: 30px;
+}
+
+.worker-list > .list {
+  background-color: var(--bgb-color);
+  text-align: center;
+  box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%),
+    0px 2px 1px rgb(0 0 0 / 20%);
+  border-radius: 0px 0px 4px 4px;
+  padding-bottom: 30px;
 }
 
 .profession {
@@ -243,7 +301,10 @@ p {
 
 /* Портфоліо */
 .button-list {
+  display: flex;
+  justify-content: center;
   margin-bottom: 34px;
+  gap: 8px;
 }
 
 .button-list .button {
@@ -278,5 +339,19 @@ p {
 }
 
 .project-list img {
-  margin-bottom: 20px;
+  display: block;
+}
+
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.border {
+  border-right: 1px solid #EEEEEE;
+  border-bottom: 1px solid #EEEEEE;
+  border-left: 1px solid #EEEEEE;
+
+  padding: 20px 24px;
 }
